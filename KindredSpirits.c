@@ -14,7 +14,7 @@ node *createNode(int data);
 void postorderTraversal(node *root, int *ptr, int *array);
 void preorderTraversal(node *root, int *ptr, int *array);
 
-// PLEASE NOTE, this basic function was taken from Dr. Szumlanski's "more-recursive-tree-functions.c" code.
+
 int countNodes(node *root)
 {
 	if (root == NULL)
@@ -23,8 +23,7 @@ int countNodes(node *root)
 	return 1 + countNodes(root->left) + countNodes(root->right);
 }
 
-// This is the basic create node function that Dr. Szumlaksi created in his test cases.
-// I will use it as well for the makeReflection function.
+
 node *createNode(int data)
 {
 	node *n = malloc(sizeof(node));
@@ -57,7 +56,6 @@ int isReflection(node *a, node *b){
 	}
 }
 
-// PLEASE NOTE, I got a part of my idea from looking at Dr. Szumlanski's BST_insert function in "bst.c."
 node *makeReflection(node *root){
 	if(root == NULL)
 		return NULL;
@@ -76,7 +74,6 @@ node *makeReflection(node *root){
 	return newRoot;
 }
 
-// PLEASE NOTE, this basic function was taken from Dr. Szumlanski's "bst.c" code, only modified to add to an array.
 void postorderTraversal(node *root, int *ptr, int *array){
 	if (root == NULL)
 		return;
@@ -86,7 +83,6 @@ void postorderTraversal(node *root, int *ptr, int *array){
 	array[(*ptr)++] = root->data;
 }
 
-// PLEASE NOTE, this basic function was taken from Dr. Szumlanski's "bst.c" code, only modified to add to an array.
 void preorderTraversal(node *root, int *ptr, int *array){
 	if (root == NULL) 
 		return;
