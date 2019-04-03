@@ -139,7 +139,6 @@ int kindredSpirits(node *a, node *b){
 		return 1;
 	else if(pass == 0)
 		return 0;
-
 }
 
 double difficultyRating(void){
