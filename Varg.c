@@ -10,7 +10,6 @@
 #include <stdlib.h>
 #include "Varg.h"
 
-
 char fancyMostFrequentChar(char c, ...){
 // Array has 3 rows and 26 columns, the 26 columns are for each letter in the alphabet, and row 1 = the number of occurances of each letter,
 // row 2 = the entry time of the input letters by the user, and row 3 = a tick mark (1 or 0) used to mark each letter that is tied for the highest number of occurances.
