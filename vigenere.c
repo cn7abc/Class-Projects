@@ -89,7 +89,6 @@ int main(int argc, char **argv){
 		m++;
 	}while(m < keyLength);
 
-
 	
 
 	// Initalize the plaintextString array with x at every index.
