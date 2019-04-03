@@ -29,7 +29,6 @@ int main(int argc, char **argv){
 	char *fname2 = argv[2];
 	FILE *keyFile = fopen(fname1,"r");
 	FILE *PlainTextFile = fopen(fname2, "r");
-	
 
 	if(fname1 == NULL || fname2 == NULL)
 		printf("Couldn't open file.\n");
